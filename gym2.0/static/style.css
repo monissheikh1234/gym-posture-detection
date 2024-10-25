@@ -1,0 +1,276 @@
+/* style.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a90e2;
+    padding: 10px 20px;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #357ABD;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e0eafc;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+/* Exercise cards */
+.exercise-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.exercise-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exercise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.start-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #357ABD;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4a90e2;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Page section styles */
+.page-section {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header h1 {
+    font-size: 2.5em;
+}
+
+/* Content Headers */
+.page-section h2 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Text */
+.page-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* List styling */
+.page-section ul {
+    padding-left: 20px;
+}
+
+.page-section li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Form styles for Sign In page */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.form-container input[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+/* style.css */
+
+/* Updated exercise card styling with image */
+.exercise-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exercise-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.exercise-card h3 {
+    margin: 10px 0;
+    color: #4a90e2;
+}
+
+.exercise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.start-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #357ABD;
+}
+.exercise-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* style.css */
+
+/* Shared styles for sign-in and sign-up containers */
+.signin-container, .signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signin-form input[type="text"], 
+.signin-form input[type="password"],
+.signup-form input[type="text"], 
+.signup-form input[type="email"], 
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.signin-form button, .signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin-form button:hover, .signup-form button:hover {
+    background-color: #357ABD;
+}
+

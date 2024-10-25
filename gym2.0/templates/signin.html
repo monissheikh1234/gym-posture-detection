@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1>Sign In</h1>
+    </header>
+    <section class="page-section">
+        <h2>Welcome Back</h2>
+        <form class="form-container" action="{{ url_for('signin') }}" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="submit" value="Sign In">
+        </form>
+    </section>
+    <footer class="footer">
+        <p>New here? <a href="{{ url_for('signup') }}" class="nav-button">SignUp</a></p>
+    </footer>
+</body>
+</html>
